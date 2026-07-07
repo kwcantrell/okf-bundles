@@ -12,8 +12,14 @@ import re, sys, pathlib
 REPO = pathlib.Path(__file__).resolve().parent.parent
 FM = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 LINK = re.compile(r"\]\((/[^)]+\.md)\)")
-# Auxiliary references: markdown-link targets, or repo-path code spans ending .md
-AUX_REF = re.compile(r"\]\(([^)]+)\)|`(/?(?:oks|docs|tools|\.claude)/[^`]+\.md)`")
+# Auxiliary references. Markdown links are matched OUTSIDE inline-code spans
+# (so documentation that shows link *syntax* in backticks isn't treated as a
+# real link); repo-path examples are matched INSIDE backticks and must start
+# with a real top-level dir (so syntax illustrations like `](/....md)` don't
+# match).
+CODE_SPAN = re.compile(r"`[^`]*`")
+MD_LINK = re.compile(r"\]\(([^)]+)\)")
+CODE_PATH = re.compile(r"`(/?(?:oks|docs|tools|\.claude)/[^`]+\.md)`")
 
 def concepts(root):
     return [p for p in root.rglob("*.md")]
@@ -50,8 +56,9 @@ def check_aux(path):
         return errors
     text = path.read_text(encoding="utf-8")
     rel = display(path)
-    for mdlink, codepath in AUX_REF.findall(text):
-        ref = (mdlink or codepath).split()[0].split("#")[0]  # strip title/fragment
+    refs = MD_LINK.findall(CODE_SPAN.sub("", text)) + CODE_PATH.findall(text)
+    for raw in refs:
+        ref = raw.split()[0].split("#")[0]  # strip title/fragment
         if not ref or ref.startswith(("http://", "https://", "mailto:")):
             continue
         base = REPO if ref.startswith("/") else path.parent
@@ -61,9 +68,10 @@ def check_aux(path):
 
 def aux_files():
     files = []
-    readme = REPO / "README.md"
-    if readme.exists():
-        files.append(readme)
+    for name in ("README.md", "CLAUDE.md"):
+        f = REPO / name
+        if f.exists():
+            files.append(f)
     skills = REPO / ".claude" / "skills"
     if skills.exists():
         files += sorted(skills.rglob("*.md"))
