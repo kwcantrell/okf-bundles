@@ -32,12 +32,18 @@ area indexes, which link to individual concept files (progressive
 disclosure). Every concept file ends with a `# Sources` section citing the
 primary documentation behind its claims, so you can verify or go deeper.
 
-To check a bundle's structural integrity (frontmatter, required `type`
-field, link resolution), run the validator:
+To check structural integrity (frontmatter, required `type` field, link
+resolution), run the validator:
 
 ```bash
 python3 tools/validate_okf.py
 ```
+
+With no arguments it checks every concept under `oks/` plus the cross-references
+in `README.md` and the router skill; pass a bundle path (e.g.
+`tools/validate_okf.py oks/git-best-practices`) to check just that bundle. The
+same command runs in CI on every push and pull request
+(`.github/workflows/validate.yml`).
 
 ## Design docs
 
