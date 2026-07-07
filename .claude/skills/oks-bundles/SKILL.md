@@ -17,12 +17,16 @@ and follow its root-relative links — each index links to area indexes, which
 link to individual concepts (progressive disclosure). Read only what's on the
 path to the answer.
 
+Paths below and inside the bundles are written root-relative (leading `/`),
+meaning relative to this repository's root — open `/oks/...` as `oks/...` from
+the repo root.
+
 ## Decision table
 
 | Topic | Start here |
 | --- | --- |
-| git, GitHub, commits, branches, merges, rebases, pull requests, tags, hooks, history, repo security | `oks/git-best-practices/index.md` |
-| laying out a repo so AI agents find skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, knowledge bundles | `oks/ai-agent-repo-structure/index.md` |
+| git, GitHub, commits, branches, merges, rebases, pull requests, tags, hooks, history, repo security | `/oks/git-best-practices/index.md` |
+| laying out a repo so AI agents find skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, knowledge bundles | `/oks/ai-agent-repo-structure/index.md` |
 
 ## Verifying claims
 
