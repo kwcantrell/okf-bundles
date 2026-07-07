@@ -63,6 +63,7 @@ assurance against onboarding friction.
 
 - [commit-message style](/oks/git-best-practices/commits/commit-message-style.md)
 - [branch protection](/oks/git-best-practices/branching/branch-protection.md)
+- [signed tags](/oks/git-best-practices/security/signed-tags.md)
 
 # Sources
 

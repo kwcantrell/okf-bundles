@@ -69,6 +69,7 @@ difference is only in how many times you may encounter them.
 
 - [merge vs. rebase](/oks/git-best-practices/branching/merge-vs-rebase.md)
 - [staging area](/oks/git-best-practices/fundamentals/staging-area.md)
+- [revert vs. reset](/oks/git-best-practices/history/revert-vs-reset.md)
 
 # Sources
 

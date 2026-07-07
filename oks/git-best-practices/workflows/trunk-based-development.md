@@ -58,6 +58,7 @@ comfortable starting point.
 - [Git Flow](/oks/git-best-practices/workflows/git-flow.md)
 - [branch protection](/oks/git-best-practices/branching/branch-protection.md)
 - [atomic commits](/oks/git-best-practices/commits/atomic-commits.md)
+- [ci integration](/oks/git-best-practices/automation/ci-integration.md)
 
 # Sources
 

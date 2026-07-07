@@ -54,6 +54,7 @@ and small, frequent integration practical.
 - [Conventional Commits](/oks/git-best-practices/commits/conventional-commits.md)
 - [commit-message style](/oks/git-best-practices/commits/commit-message-style.md)
 - [staging area](/oks/git-best-practices/fundamentals/staging-area.md)
+- [interactive rebase](/oks/git-best-practices/history/interactive-rebase.md)
 
 # Sources
 

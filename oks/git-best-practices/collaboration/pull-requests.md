@@ -63,6 +63,7 @@ ensures those steps actually happen.
 - [CODEOWNERS](/oks/git-best-practices/collaboration/codeowners.md)
 - [GitHub flow](/oks/git-best-practices/workflows/github-flow.md)
 - [branch protection](/oks/git-best-practices/branching/branch-protection.md)
+- [ci integration](/oks/git-best-practices/automation/ci-integration.md)
 
 # Sources
 

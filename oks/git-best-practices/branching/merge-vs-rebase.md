@@ -67,6 +67,7 @@ strategies resolve the same way.
 - [resolving conflicts](/oks/git-best-practices/branching/resolving-conflicts.md)
 - [branch protection](/oks/git-best-practices/branching/branch-protection.md)
 - [Git Flow](/oks/git-best-practices/workflows/git-flow.md)
+- [rebasing](/oks/git-best-practices/history/rebasing.md)
 
 # Sources
 

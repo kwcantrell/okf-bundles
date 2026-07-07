@@ -27,19 +27,18 @@ trade-offs rather than mandating one answer.
 
 ## Concept areas
 
-The bundle is organized into ten areas. The first five below are available now;
-the remaining five arrive in a later authoring pass.
+The bundle is organized into ten areas, all available now.
 
 - [fundamentals](/oks/git-best-practices/fundamentals/index.md) — how Git models data: snapshots, the three states, the staging area, refs, and objects.
 - [workflows](/oks/git-best-practices/workflows/index.md) — branching models teams use: GitHub flow, Git Flow, trunk-based development, and the forking workflow.
 - [branching](/oks/git-best-practices/branching/index.md) — branch naming, branch protection, merge vs. rebase, and resolving conflicts.
 - [commits](/oks/git-best-practices/commits/index.md) — atomic commits, Conventional Commits, commit-message style, and signing commits.
 - [collaboration](/oks/git-best-practices/collaboration/index.md) — pull requests, code review, draft PRs, and CODEOWNERS.
-- history *(planned)* — rewriting and navigating history: rebasing, interactive rebase, cherry-pick, revert vs. reset, and bisect.
-- remote *(planned)* — working with remotes: fetch/pull/push, tracking branches, and tags/releases.
-- automation *(planned)* — Git hooks, CI integration, and the pre-commit framework.
-- security *(planned)* — secret management, `.gitignore` hygiene, signed tags, and credential storage.
-- scale *(planned)* — monorepo vs. polyrepo, Git LFS, and sparse checkout.
+- [history](/oks/git-best-practices/history/index.md) — rewriting and navigating history: rebasing, interactive rebase, cherry-pick, revert vs. reset, and bisect.
+- [remote](/oks/git-best-practices/remote/index.md) — working with remotes: fetch/pull/push, tracking branches, and tags/releases.
+- [automation](/oks/git-best-practices/automation/index.md) — Git hooks, CI integration, and the pre-commit framework.
+- [security](/oks/git-best-practices/security/index.md) — secret management, `.gitignore` hygiene, signed tags, and credential storage.
+- [scale](/oks/git-best-practices/scale/index.md) — monorepo vs. polyrepo, Git LFS, and sparse checkout.
 
 ## How to read this bundle
 
