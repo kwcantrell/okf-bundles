@@ -1,5 +1,45 @@
 # okf-bundles
 
-Open Knowledge Format (OKF) bundles plus a Claude Code router skill.
+A collection of [Open Knowledge Format](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing)
+(OKF) bundles, plus a Claude Code router skill that makes them discoverable to
+agents.
 
-See `docs/superpowers/specs/` for the design.
+OKF is a simple pattern for durable, sourced knowledge: Markdown files with
+YAML frontmatter, cross-linked into a graph, readable by both humans and AI
+agents without any special tooling.
+
+## Bundles
+
+- [`oks/git-best-practices/`](oks/git-best-practices/index.md) — Git and
+  GitHub best practices, from the repository model to collaboration
+  workflows.
+- [`oks/ai-agent-repo-structure/`](oks/ai-agent-repo-structure/index.md) — how
+  to structure a repository so AI coding agents can discover context, load
+  skills, and work reliably.
+
+## Router skill
+
+[`.claude/skills/oks-bundles/`](.claude/skills/oks-bundles/SKILL.md) is a
+Claude Code skill that routes questions to the right bundle. Its
+`description` carries explicit triggers (git/GitHub topics, or repo layout
+for AI agents) so Claude Code loads it automatically when relevant, and its
+body gives a decision table pointing at each bundle's `index.md`.
+
+## How to consume a bundle
+
+Start at a bundle's `index.md` and follow its links — each index links to
+area indexes, which link to individual concept files (progressive
+disclosure). Every concept file ends with a `# Sources` section citing the
+primary documentation behind its claims, so you can verify or go deeper.
+
+To check a bundle's structural integrity (frontmatter, required `type`
+field, link resolution), run the validator:
+
+```bash
+python3 tools/validate_okf.py
+```
+
+## Design docs
+
+See [`docs/superpowers/`](docs/superpowers/) for the design spec and
+implementation plan behind this repo.
