@@ -13,7 +13,10 @@ def check(root):
     errors = []
     for p in concepts(root):
         text = p.read_text(encoding="utf-8")
-        rel = p.relative_to(REPO)
+        try:
+            rel = p.relative_to(REPO)
+        except ValueError:
+            rel = p
         name = p.name
         m = FM.match(text)
         if name != "log.md":
@@ -29,7 +32,7 @@ def check(root):
     return errors
 
 def main():
-    roots = [pathlib.Path(a) for a in sys.argv[1:]] or [REPO / "oks"]
+    roots = [pathlib.Path(a).resolve() for a in sys.argv[1:]] or [REPO / "oks"]
     errors = []
     for r in roots:
         if r.exists():
