@@ -40,12 +40,14 @@ the [server side](/oks/git-best-practices/automation/git-hooks.md) or in
 
 Because [hooks](/oks/git-best-practices/automation/git-hooks.md) live in
 `.git/hooks`, they are **not copied when a repository is cloned** (though
-`git init` templates can populate them in newly created repos). This is why the
-popular **pre-commit framework** exists: it stores hook configuration in a file
-committed to the repository and installs the actual `.git/hooks` scripts from it,
-so every contributor runs the same checks — linters, formatters, and
-[secret](/oks/git-best-practices/security/secret-management.md) scanners — without
-manual setup.
+`git init` templates can populate them in newly created repos). Git hooks can
+also live wherever `core.hooksPath` points, so a team can commit a hooks
+directory to the repository and have each contributor point Git at it once —
+for example `git config core.hooksPath .githooks` — so everyone runs the same
+versioned checks, such as linters, formatters, and
+[secret](/oks/git-best-practices/security/secret-management.md) scanners,
+without manual per-machine setup. Third-party hook-manager tools exist that
+build on this same idea.
 
 # Related
 
@@ -57,3 +59,4 @@ manual setup.
 # Sources
 
 - https://git-scm.com/docs/githooks
+- https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks

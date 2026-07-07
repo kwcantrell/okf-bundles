@@ -34,9 +34,11 @@ have been updated but before any objects are transferred, and can **halt the
 push**.
 
 A crucial limitation: **client-side hooks are not copied when a repository is
-cloned.** That is exactly the gap the
-[pre-commit](/oks/git-best-practices/automation/pre-commit.md) framework exists to
-close, letting a team share hook configuration through the repository itself.
+cloned.** Because hooks can live wherever `core.hooksPath` points, teams work
+around this by committing a hooks directory to the repository and having each
+contributor point Git at it — see
+[pre-commit](/oks/git-best-practices/automation/pre-commit.md) for how that
+looks in practice.
 
 ## Server-side hooks
 
