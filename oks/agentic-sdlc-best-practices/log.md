@@ -3,3 +3,4 @@
 2026-07-07 — bundle created; foundations area authored
 2026-07-07 — added context-engineering area
 2026-07-07 — added requirements-and-planning area
+2026-07-07 — added design-and-architecture area
