@@ -87,6 +87,7 @@ this is the authoring loop that produces one.
 # Sources
 
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- https://code.claude.com/docs/en/best-practices
 - https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
 - https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering
 - https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding

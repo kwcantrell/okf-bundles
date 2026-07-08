@@ -2,7 +2,7 @@
 type: Agentic SDLC Practice
 title: Memory And Knowledge Capture
 description: The discipline of deciding what to persist across sessions — decisions, conventions, and lessons — and feeding it back into repo context so the next session starts informed rather than blank.
-resource: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+resource: https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding
 tags:
   - agentic-sdlc
   - context-engineering

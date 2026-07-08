@@ -19,8 +19,8 @@ responsibilities are separated, boundaries are clear, and files are small enough
 to hold in your head — is also the structure an agent can work in without
 losing the thread. The question the paper poses for context engineering carries
 over directly to architecture: "what would a new team member need to know to
-contribute effectively?" (Osmani, Saboo, and Kartakis, *The New SDLC With Vibe
-Coding*, May 2026). Design for that reader and you have designed for the agent.
+contribute effectively" (Osmani, Saboo, and Kartakis, *The New SDLC With Vibe
+Coding*, May 2026)? Design for that reader and you have designed for the agent.
 
 ## Structure the agent can hold in view
 
