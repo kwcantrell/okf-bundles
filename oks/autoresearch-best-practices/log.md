@@ -17,3 +17,5 @@ Every concept is grounded in the autoresearch repository's own files (`README.md
 are added.
 
 2026-07-07 — added running-with-claude-code area
+
+2026-07-07 — added agentic-engineering area
