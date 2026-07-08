@@ -10,3 +10,4 @@
 2026-07-07 — added agent-harness area
 2026-07-07 — added applications area
 2026-07-07 — added root index, forward links; registered bundle in router and README
+2026-07-08 — fixed YAML frontmatter parse errors (quoted descriptions containing ': ') in applications/index.md and applications/adopting-agentic-sdlc.md

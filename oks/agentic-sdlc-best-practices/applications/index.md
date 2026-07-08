@@ -1,12 +1,12 @@
 ---
 type: OKF Concept Index
 title: Applications
-description: The bundle's payoff area — every concept here carries an explicit, reusable procedure or template an agent can instantiate, covering the three consumer use cases: authoring an AGENTS.md, generating a coding-agent system prompt, and designing repo tools and middleware.
+description: "The bundle's payoff area — every concept here carries an explicit, reusable procedure or template an agent can instantiate, covering the three consumer use cases: authoring an AGENTS.md, generating a coding-agent system prompt, and designing repo tools and middleware."
 resource: https://agents.md/
 tags:
   - agentic-sdlc
   - applications
-timestamp: 2026-07-07T00:00:00Z
+timestamp: 2026-07-08T00:00:00Z
 ---
 
 # Applications

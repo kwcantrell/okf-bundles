@@ -1,12 +1,12 @@
 ---
 type: Agentic SDLC Practice
 title: Adopting Agentic SDLC
-description: Adoption is staged, not all-at-once — individual developers, engineering leaders, and organizations each have a different first move, but the shared rule is the same: start where verification is cheap and grow autonomy only as the agent earns trust.
+description: "Adoption is staged, not all-at-once — individual developers, engineering leaders, and organizations each have a different first move, but the shared rule is the same: start where verification is cheap and grow autonomy only as the agent earns trust."
 resource: https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding
 tags:
   - agentic-sdlc
   - applications
-timestamp: 2026-07-07T00:00:00Z
+timestamp: 2026-07-08T00:00:00Z
 ---
 
 # Adopting Agentic SDLC
