@@ -9,6 +9,14 @@ with explicit path arguments only those paths are checked as bundle roots.
 """
 import re, sys, pathlib
 
+try:
+    import yaml
+except ModuleNotFoundError:
+    sys.exit(
+        "validate_okf.py needs PyYAML to parse frontmatter the way GitHub does.\n"
+        "Run `uv sync` once, then invoke via `uv run tools/validate_okf.py`."
+    )
+
 REPO = pathlib.Path(__file__).resolve().parent.parent
 FM = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 LINK = re.compile(r"\]\((/[^)]+\.md)\)")
@@ -40,8 +48,21 @@ def check(root):
         if name != "log.md":
             if not m:
                 errors.append(f"{rel}: missing YAML frontmatter")
-            elif not re.search(r"^type:\s*\S", m.group(1), re.MULTILINE):
-                errors.append(f"{rel}: frontmatter missing required `type`")
+            else:
+                # Strict-parse with PyYAML: GitHub rejects frontmatter a regex
+                # check tolerates (e.g. an unquoted `: ` inside a description).
+                try:
+                    fm = yaml.safe_load(m.group(1))
+                except yaml.YAMLError as e:
+                    mark = getattr(e, "problem_mark", None)
+                    where = f" at line {mark.line + 1} column {mark.column + 1}" if mark else ""
+                    problem = getattr(e, "problem", None) or e
+                    errors.append(f"{rel}: invalid YAML frontmatter{where}: {problem}")
+                else:
+                    if not isinstance(fm, dict):
+                        errors.append(f"{rel}: frontmatter is not a YAML mapping")
+                    elif not str(fm.get("type") or "").strip():
+                        errors.append(f"{rel}: frontmatter missing required `type`")
         if name not in ("index.md", "log.md") and "# Sources" not in text:
             errors.append(f"{rel}: missing `# Sources` section")
         for target in LINK.findall(text):
