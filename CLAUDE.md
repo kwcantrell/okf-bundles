@@ -30,7 +30,8 @@ Follow these rules, then validate. Deeper rationale lives in the bundle itself:
    `# Sources` section citing **primary sources only**: official docs or
    major-provider engineering material. Allowed hosts: `git-scm.com`,
    `docs.github.com`, `atlassian.com`, `conventionalcommits.org`, `agents.md`,
-   `docs.claude.com`, `code.claude.com`, `anthropic.com`, `cloud.google.com`.
+   `docs.claude.com`, `code.claude.com`, `anthropic.com`, `cloud.google.com`, `github.com`, `arxiv.org`, `x.com`.
+   These three are for the AutoResearch bundle's primary sources (Karpathy's GitHub repo, arXiv papers, and Karpathy's X posts).
    No forums, Reddit, or unattributed blogs. Do not state a non-obvious claim
    you cannot cite to one of these.
 
