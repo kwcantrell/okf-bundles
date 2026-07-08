@@ -56,8 +56,10 @@ delegated sub-runs rather than one monolithic session — see
 [delegating to subagents](/oks/claude-best-practices/subagents/delegating-to-subagents.md).
 One practical constraint to know: a `claude -p` run waits for background
 subagents and workflows, but that wait is capped at 10 minutes by default via
-`CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS` — which lines up neatly with AutoResearch's
-own rule that an experiment exceeding 10 minutes is killed and discarded.
+`CLAUDE_CODE_PRINT_BG_WAIT_CEILING_MS`. That cap governs how long the headless
+run waits on background subagents and workflows — it does not bound or kill a
+Bash-launched `uv run train.py` experiment; the loop's own `program.md` rule is
+what enforces the experiment time-box.
 
 # Related
 

@@ -12,8 +12,8 @@ timestamp: 2026-07-07T00:00:00Z
 
 # Running With Claude Code
 
-AutoResearch is agent-agnostic: Karpathy's repo tells you to "point your favorite
-coding agent at `program.md`" and let it go. The loop itself just needs an
+AutoResearch is agent-agnostic: Karpathy's repo tells you to point "your favorite
+coding agent" at `program.md` and let it go. The loop itself just needs an
 autonomous coding agent that can edit a file, run a command, read the result, and
 decide to keep or discard — over and over, unattended. This area is about using
 **Claude Code** as that agent: how its headless mode, prompting, and permission

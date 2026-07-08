@@ -43,7 +43,8 @@ actually runs. For a locked-down loop, the relevant choices are:
   run. Rules can be scoped with prefix syntax like `Bash(git commit *)`.
 - **Permission modes.** The
   [permission modes](/oks/claude-best-practices/safety/permission-modes.md) range
-  from `default` (manual approval) to `bypassPermissions` (no prompts at all). For
+  from `default` (manual approval) to `bypassPermissions` (prompts suppressed
+  except explicit ask-rules and root/home-delete circuit-breakers). For
   scripted, locked-down runs the docs recommend `dontAsk`, which permits only
   pre-approved tools. `bypassPermissions` disables safety checks entirely and
   "offers no protection against prompt injection or unintended actions"; the docs
