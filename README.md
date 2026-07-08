@@ -16,6 +16,9 @@ agents without any special tooling.
 - [`oks/ai-agent-repo-structure/`](oks/ai-agent-repo-structure/index.md) — how
   to structure a repository so AI coding agents can discover context, load
   skills, and work reliably.
+- [`oks/claude-best-practices/`](oks/claude-best-practices/index.md) — how to
+  use Claude Code effectively, from managing context and planning to
+  verification, subagents, automation, and permissions/safety.
 
 ## Router skill
 

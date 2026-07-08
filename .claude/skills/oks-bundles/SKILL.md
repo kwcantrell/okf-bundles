@@ -1,6 +1,6 @@
 ---
 name: oks-bundles
-description: Use when the user asks about git or GitHub workflows, conventions, commands, history, branching, merging, rebasing, pull requests, tags, hooks, or repo security — or when the user asks how to structure a repository so AI agents can discover skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, or curated knowledge. Routes to the OKF bundles under oks/ that hold the answer.
+description: Use when the user asks about git or GitHub workflows, conventions, commands, history, branching, merging, rebasing, pull requests, tags, hooks, or repo security — or when the user asks how to structure a repository so AI agents can discover skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, or curated knowledge — or when the user asks about using Claude Code effectively (context management, planning, verification, workflows, subagents and model choice, automation, permissions/safety). Routes to the OKF bundles under oks/ that hold the answer.
 ---
 
 # OKS Bundles Router
@@ -27,6 +27,7 @@ the repo root.
 | --- | --- |
 | git, GitHub, commits, branches, merges, rebases, pull requests, tags, hooks, history, repo security | `/oks/git-best-practices/index.md` |
 | laying out a repo so AI agents find skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, knowledge bundles | `/oks/ai-agent-repo-structure/index.md` |
+| using Claude Code effectively — workflows, context management, planning, subagents and model choice, verification, automation, permissions/safety | `/oks/claude-best-practices/index.md` |
 
 ## Verifying claims
 
