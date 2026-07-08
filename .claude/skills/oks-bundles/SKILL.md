@@ -1,6 +1,6 @@
 ---
 name: oks-bundles
-description: Use when the user asks about git or GitHub workflows, conventions, commands, history, branching, merging, rebasing, pull requests, tags, hooks, or repo security — or when the user asks how to structure a repository so AI agents can discover skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, or curated knowledge — or when the user asks about using Claude Code effectively (context management, planning, verification, workflows, subagents and model choice, automation, permissions/safety) — or when the user asks about Karpathy's AutoResearch, autonomous ML-research loops, running research agents with Claude Code, or agentic engineering / vibe coding. Routes to the OKF bundles under oks/ that hold the answer.
+description: Use when the user asks about git or GitHub workflows, conventions, commands, history, branching, merging, rebasing, pull requests, tags, hooks, or repo security — or when the user asks how to structure a repository so AI agents can discover skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, or curated knowledge — or when the user asks about using Claude Code effectively (context management, planning, verification, workflows, subagents and model choice, automation, permissions/safety) — or when the user asks about Karpathy's AutoResearch, autonomous ML-research loops, running research agents with Claude Code, or Karpathy's vibe-coding coinage and agentic-engineering posts — or when the user asks about the agentic SDLC (vibe coding vs agentic engineering, AI-era lifecycle phases, harness engineering — system prompts, tool design, middleware — context engineering as a discipline, or authoring AGENTS.md files / system prompts / tools for coding agents). Routes to the OKF bundles under oks/ that hold the answer.
 ---
 
 # OKS Bundles Router
@@ -28,7 +28,8 @@ the repo root.
 | git, GitHub, commits, branches, merges, rebases, pull requests, tags, hooks, history, repo security | `/oks/git-best-practices/index.md` |
 | laying out a repo so AI agents find skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, knowledge bundles | `/oks/ai-agent-repo-structure/index.md` |
 | using Claude Code effectively — workflows, context management, planning, subagents and model choice, verification, automation, permissions/safety | `/oks/claude-best-practices/index.md` |
-| Karpathy AutoResearch, autonomous ML-research loops, running research agents with Claude Code, agentic engineering / vibe coding | `/oks/autoresearch-best-practices/index.md` |
+| Karpathy AutoResearch, autonomous ML-research loops, running research agents with Claude Code, Karpathy's vibe-coding coinage / agentic-engineering posts | `/oks/autoresearch-best-practices/index.md` |
+| agentic SDLC — vibe coding vs agentic engineering, SDLC practices when agents write the code, harness engineering (system prompts, tools, middleware), authoring the *content* of AGENTS.md / system prompts / repo tooling for agents (vs. where AGENTS.md lives → repo-structure) | `/oks/agentic-sdlc-best-practices/index.md` |
 
 ## Verifying claims
 
