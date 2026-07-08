@@ -17,7 +17,7 @@ same file in a loop, load the working directory up front — are better enforced
 a *tool* the agent calls or *middleware* that wraps the agent loop. The motivating
 evidence is concrete: LangChain moved its coding agent 13.7 points on
 Terminal-Bench 2.0 (52.8% to 66.5%) with the model held fixed at gpt-5.2-codex,
-changing only the harness (langchain.com). This procedure decides when to reach
+changing only the harness (langchain.com, as of late 2026). This procedure decides when to reach
 for a tool or middleware instead of an instruction, and how to prove the change
 worked. The design principles it applies live in
 [tool design for agents](/oks/agentic-sdlc-best-practices/agent-harness/tool-design-for-agents.md)

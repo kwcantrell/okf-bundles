@@ -57,7 +57,7 @@ into a number. LangChain reports improving "deepagents-cli (our coding agent) 13
 points from 52.8 to 66.5 on Terminal Bench 2.0"
 ([Improving Deep Agents with Harness Engineering](https://www.langchain.com/blog/improving-deep-agents-with-harness-engineering)) —
 and, crucially, "we only tweaked the harness and kept the model fixed, gpt-5.2-codex"
-(as reported in that post). A +13.7-point move attributable entirely to harness
+(as reported in that post, late 2026). A +13.7-point move attributable entirely to harness
 changes, with the model held constant, is only knowable because it was measured
 against a fixed eval. Without the eval, the same set of changes would have been a
 collection of plausible-sounding tweaks with no way to tell which helped, which hurt,

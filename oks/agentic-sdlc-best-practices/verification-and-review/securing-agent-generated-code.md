@@ -72,6 +72,7 @@ Two practices close the posture.
 # Related
 
 - [reviewing AI-generated code](/oks/agentic-sdlc-best-practices/verification-and-review/reviewing-ai-generated-code.md)
+- [human-in-the-loop checkpoints](/oks/agentic-sdlc-best-practices/implementation/human-in-the-loop-checkpoints.md)
 - [sandboxing and review](/oks/claude-best-practices/safety/sandboxing-and-review.md)
 - [guardrails and permissions](/oks/ai-agent-repo-structure/practices/guardrails-and-permissions.md)
 
