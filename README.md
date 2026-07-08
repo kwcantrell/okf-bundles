@@ -22,6 +22,10 @@ agents without any special tooling.
 - [`oks/autoresearch-best-practices/`](oks/autoresearch-best-practices/index.md) — Karpathy's
   autoresearch autonomous ML-research loop, running it with Claude Code, and
   the agentic-engineering discipline around it.
+- [`oks/agentic-sdlc-best-practices/`](oks/agentic-sdlc-best-practices/index.md) — SDLC best
+  practices when AI agents do the engineering: the vibe-coding→agentic-engineering
+  spectrum, context engineering, phase-by-phase practices, harness engineering, and
+  procedures for authoring AGENTS.md files, system prompts, and agent tooling.
 
 ## Router skill
 

@@ -48,6 +48,7 @@ in full.
 # Related
 
 - [when vibe coding is appropriate](/oks/agentic-sdlc-best-practices/foundations/when-vibe-coding-is-appropriate.md)
+- [context engineering over prompt engineering](/oks/agentic-sdlc-best-practices/context-engineering/context-engineering-over-prompt-engineering.md)
 
 # Sources
 

@@ -60,6 +60,7 @@ does on its own.
 
 - [curating the context window](/oks/agentic-sdlc-best-practices/context-engineering/curating-the-context-window.md)
 - [delegating to subagents](/oks/claude-best-practices/subagents/delegating-to-subagents.md)
+- [middleware and context management](/oks/agentic-sdlc-best-practices/agent-harness/middleware-and-context-management.md)
 
 # Sources
 

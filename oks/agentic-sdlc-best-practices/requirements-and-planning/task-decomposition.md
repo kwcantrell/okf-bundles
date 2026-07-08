@@ -54,6 +54,7 @@ verifiable increment that the implementation phase builds and checks in turn.
 
 - [specs as the primary artifact](/oks/agentic-sdlc-best-practices/requirements-and-planning/specs-as-the-primary-artifact.md)
 - [conductor and orchestrator roles](/oks/agentic-sdlc-best-practices/foundations/conductor-and-orchestrator-roles.md)
+- [small verifiable increments](/oks/agentic-sdlc-best-practices/implementation/small-verifiable-increments.md)
 
 # Sources
 

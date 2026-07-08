@@ -48,6 +48,7 @@ is the harness, and building it well is the subject of the agent-harness area.
 # Related
 
 - [from syntax to intent](/oks/agentic-sdlc-best-practices/foundations/from-syntax-to-intent.md)
+- [harness engineering](/oks/agentic-sdlc-best-practices/agent-harness/harness-engineering.md)
 
 # Sources
 

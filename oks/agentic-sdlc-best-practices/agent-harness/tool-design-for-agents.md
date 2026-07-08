@@ -70,6 +70,7 @@ application covered later in this bundle.
 
 - [harness engineering](/oks/agentic-sdlc-best-practices/agent-harness/harness-engineering.md)
 - [system prompt design](/oks/agentic-sdlc-best-practices/agent-harness/system-prompt-design.md)
+- [designing repo tools and middleware](/oks/agentic-sdlc-best-practices/applications/designing-repo-tools-and-middleware.md)
 
 # Sources
 

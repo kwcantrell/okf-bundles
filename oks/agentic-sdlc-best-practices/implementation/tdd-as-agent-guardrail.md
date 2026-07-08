@@ -63,6 +63,7 @@ verification-and-review concern covered elsewhere in this bundle).
 
 - [test-driven-development](/oks/claude-best-practices/workflows/test-driven-development.md)
 - [small verifiable increments](/oks/agentic-sdlc-best-practices/implementation/small-verifiable-increments.md)
+- [agent-written tests and reward hacking](/oks/agentic-sdlc-best-practices/verification-and-review/agent-written-tests-and-reward-hacking.md)
 
 # Sources
 

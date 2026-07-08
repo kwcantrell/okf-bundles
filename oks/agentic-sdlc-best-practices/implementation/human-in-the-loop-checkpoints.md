@@ -77,6 +77,8 @@ are covered there rather than here.
 
 - [conductor and orchestrator roles](/oks/agentic-sdlc-best-practices/foundations/conductor-and-orchestrator-roles.md)
 - [permission modes](/oks/claude-best-practices/safety/permission-modes.md)
+- [adversarial multi-agent review](/oks/agentic-sdlc-best-practices/verification-and-review/adversarial-multi-agent-review.md)
+- [agents in CI/CD](/oks/agentic-sdlc-best-practices/operations-and-evolution/agents-in-ci-cd.md)
 
 # Sources
 

@@ -9,3 +9,4 @@
 2026-07-07 — added operations-and-evolution area
 2026-07-07 — added agent-harness area
 2026-07-07 — added applications area
+2026-07-07 — added root index, forward links; registered bundle in router and README

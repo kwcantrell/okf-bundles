@@ -60,6 +60,7 @@ human-in-the-loop checkpoints belong.
 - [from syntax to intent](/oks/agentic-sdlc-best-practices/foundations/from-syntax-to-intent.md)
 - [delegating to subagents](/oks/claude-best-practices/subagents/delegating-to-subagents.md)
 - [safety](/oks/claude-best-practices/safety/index.md)
+- [human-in-the-loop checkpoints](/oks/agentic-sdlc-best-practices/implementation/human-in-the-loop-checkpoints.md)
 
 # Sources
 

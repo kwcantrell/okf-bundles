@@ -74,6 +74,7 @@ refine them against evals — is a further application covered later in this bun
 
 - [harness engineering](/oks/agentic-sdlc-best-practices/agent-harness/harness-engineering.md)
 - [tool design for agents](/oks/agentic-sdlc-best-practices/agent-harness/tool-design-for-agents.md)
+- [generating system prompts](/oks/agentic-sdlc-best-practices/applications/generating-system-prompts.md)
 
 # Sources
 

@@ -64,6 +64,7 @@ covered later in this bundle.
 
 - [harness engineering](/oks/agentic-sdlc-best-practices/agent-harness/harness-engineering.md)
 - [evals for agentic changes](/oks/agentic-sdlc-best-practices/verification-and-review/evals-for-agentic-changes.md)
+- [skills libraries](/oks/agentic-sdlc-best-practices/applications/skills-libraries.md)
 
 # Sources
 

@@ -70,6 +70,7 @@ bundle takes up in its own right.
 # Related
 
 - [agent-written tests and reward hacking](/oks/agentic-sdlc-best-practices/verification-and-review/agent-written-tests-and-reward-hacking.md)
+- [harness engineering](/oks/agentic-sdlc-best-practices/agent-harness/harness-engineering.md)
 
 # Sources
 

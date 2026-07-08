@@ -48,6 +48,7 @@ into a concrete review practice is the work of the verification-and-review area.
 # Related
 
 - [when vibe coding is appropriate](/oks/agentic-sdlc-best-practices/foundations/when-vibe-coding-is-appropriate.md)
+- [reviewing AI-generated code](/oks/agentic-sdlc-best-practices/verification-and-review/reviewing-ai-generated-code.md)
 
 # Sources
 
