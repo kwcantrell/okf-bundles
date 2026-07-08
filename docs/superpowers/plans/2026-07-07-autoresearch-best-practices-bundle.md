@@ -33,7 +33,7 @@ oks/autoresearch-best-practices/
     index.md                            # area index
     agent-research-loop.md
     spec-script-split.md
-    single-file-context-constraint.md
+    single-file-discipline.md
     keep-or-revert-with-git.md
   running-with-claude-code/
     index.md                            # area index
@@ -122,20 +122,29 @@ git commit -m "build: expand CLAUDE.md source allowlist for autoresearch bundle"
 - Create: `oks/autoresearch-best-practices/loop/index.md`
 - Create: `oks/autoresearch-best-practices/loop/agent-research-loop.md`
 - Create: `oks/autoresearch-best-practices/loop/spec-script-split.md`
-- Create: `oks/autoresearch-best-practices/loop/single-file-context-constraint.md`
+- Create: `oks/autoresearch-best-practices/loop/single-file-discipline.md`
 - Create: `oks/autoresearch-best-practices/loop/keep-or-revert-with-git.md`
 
 **Interfaces:**
 - Consumes: `autoresearch-research.md` (Cluster A facts + URLs).
 - Produces: four concept paths that later areas link back to; area `index.md`.
 
+**Research-corrected facts (use these EXACT facts; the design's earlier phrasing was imprecise — do not repeat it):**
+- Primary source URLs are the repo's raw files: `https://github.com/karpathy/autoresearch` (repo/README), `https://github.com/karpathy/autoresearch/blob/master/program.md`, `https://github.com/karpathy/autoresearch/blob/master/train.py`. Use `github.com/...blob/master/...` form for `# Sources` (allowlisted host `github.com`).
+- **Three files, not two:** `program.md` = human-edited instruction file (a lightweight "skill"); `train.py` = the single file the AGENT edits (full GPT model, optimizer Muon+AdamW, training loop; 630 lines); `prepare.py` = fixed data-prep/eval harness the agent must NOT modify.
+- **Metric:** `val_bpb` (validation bits per byte), lower is better, vocab-size-independent so architectures compare fairly. "The goal is simple: get the lowest val_bpb."
+- **Accept/reject mechanism:** on improvement the agent "advances the branch," KEEPING the git commit; if equal or worse it runs **`git reset`** back to where it started (NOT `git revert`). A run exceeding 10 minutes is killed and discarded. A "simplicity criterion" weighs complexity cost against improvement magnitude.
+- **Autonomy:** program.md's "NEVER STOP" rule — once the loop starts the agent must not pause to ask the human; the human may be asleep; ~5 min/experiment ≈ ~100 experiments overnight.
+- **Single-file rationale (do NOT claim "fits in the context window" — that is NOT in the repo):** the README frames it as "One GPU, one file, one metric," "**Single file to modify** ... keeps the scope manageable and diffs reviewable," and "**Self-contained.** No external dependencies beyond PyTorch..." The 630-line count is verifiable on `train.py`; the *rationale* is scope/reviewability/self-containment.
+- **Prompting the search:** program.md says "Everything is fair game: model architecture, optimizer, hyperparameters, training loop, batch size, model size, etc." and, when out of ideas, "think harder — read papers referenced in the code ... try combining previous near-misses, try more radical architectural changes."
+
 **Per-file content spec** (frontmatter: `type: OKF Concept` for concepts / `OKF Concept Index` for the area index; `timestamp: 2026-07-07T00:00:00Z`; `tags` include `autoresearch` + `karpathy`; `resource` = primary URL below):
 
-- `agent-research-loop.md` — `resource:` the autoresearch repo URL. Body: the full propose → run time-boxed experiment → measure validation loss → keep-or-`git revert` cycle; runs autonomously, potentially overnight; the shift of human effort to prompt-engineering the search. `# Related`: the other three `loop/` concepts. `# Sources`: repo URL (+ any citable corroboration from Cluster A).
-- `spec-script-split.md` — `resource:` repo URL. Body: the Markdown instruction file (what to try) vs the single `.py` training script (what gets edited); why the separation matters. `# Related`: `agent-research-loop.md`, `single-file-context-constraint.md`. `# Sources`: repo URL.
-- `single-file-context-constraint.md` — `resource:` repo URL. Body: deliberately ~630 lines so the whole script fits the agent's context window and it keeps a holistic view; connect to the repo's own single-file discipline. `# Related`: `spec-script-split.md`, `agent-research-loop.md`. `# Sources`: repo URL.
-- `keep-or-revert-with-git.md` — `resource:` repo URL. Body: validation loss as the accept/reject signal; `git revert` to discard any non-improving change; keeping only improvements. `# Related`: `agent-research-loop.md`, and cross-bundle `[atomic commits](/oks/git-best-practices/commits/atomic-commits.md)` (verify this path exists first with `ls`; if not, link to `/oks/git-best-practices/index.md`). `# Sources`: repo URL.
-- `loop/index.md` — `type: OKF Concept Index`, `resource:` repo URL. Progressive-disclosure list linking the four concepts (mirror the style of `oks/claude-best-practices/subagents/index.md`). No `# Sources` needed.
+- `agent-research-loop.md` — `resource:` repo README URL. Body: the full cycle — edit `train.py` → `git commit` → run the time-boxed experiment (`uv run train.py`) → read `val_bpb` → advance the branch (keep) if improved, else `git reset` back → repeat; runs autonomously overnight ("NEVER STOP"); the shift of human effort from hand-tuning to authoring `program.md` and prompting the search. `# Related`: the other three `loop/` concepts. `# Sources`: repo README + program.md URLs.
+- `spec-script-split.md` — `resource:` repo README URL. Body: the three-file split — `program.md` (human-edited instructions / lightweight skill), `train.py` (the single file the agent edits), `prepare.py` (fixed eval harness the agent must not touch); why separating the mutable script from fixed evaluation and human-authored intent matters. `# Related`: `agent-research-loop.md`, `single-file-discipline.md`. `# Sources`: repo README URL.
+- `single-file-discipline.md` — `resource:` repo README URL. Body: the agent only edits one 630-line file; the repo's stated rationale is "One GPU, one file, one metric" — manageable scope and reviewable diffs, self-contained with minimal dependencies. Do NOT assert a context-window rationale. `# Related`: `spec-script-split.md`, `agent-research-loop.md`. `# Sources`: repo README + train.py URLs.
+- `keep-or-revert-with-git.md` — `resource:` repo program.md URL. Body: `val_bpb` as the accept/reject signal; keep the commit (advance the branch) only if it improves, else `git reset` back; the 10-minute timeout discards a run; the simplicity criterion. `# Related`: `agent-research-loop.md`, and cross-bundle `[atomic commits](/oks/git-best-practices/commits/atomic-commits.md)` (verify this path exists first with `ls`; if not, link to `/oks/git-best-practices/index.md`). `# Sources`: repo program.md URL.
+- `loop/index.md` — `type: OKF Concept Index`, `resource:` repo README URL. Progressive-disclosure list linking the four concepts (mirror the style of `oks/claude-best-practices/subagents/index.md`). No `# Sources` needed.
 
 - [ ] **Step 1: Verify any cross-bundle link targets exist**
 
