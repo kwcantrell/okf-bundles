@@ -59,3 +59,4 @@ and macOS, unless it detects a recognized sandbox.
 # Sources
 
 - https://code.claude.com/docs/en/permission-modes
+- https://code.claude.com/docs/en/best-practices

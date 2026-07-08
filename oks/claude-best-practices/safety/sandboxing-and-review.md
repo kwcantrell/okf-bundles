@@ -58,3 +58,4 @@ whether its output gets trusted without a second look.
 # Sources
 
 - https://code.claude.com/docs/en/sandboxing
+- https://code.claude.com/docs/en/best-practices
