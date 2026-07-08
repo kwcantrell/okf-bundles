@@ -44,13 +44,28 @@ Follow these rules, then validate. Deeper rationale lives in the bundle itself:
    you add a whole bundle, also update the router skill's decision table
    (`.claude/skills/oks-bundles/SKILL.md`) and `README.md`.
 
+## Environment setup
+
+Python tooling lives in a [uv](https://docs.astral.sh/uv/) environment defined
+by `pyproject.toml` (currently just `pyyaml`). One-time setup:
+
+```bash
+uv sync   # creates .venv/ (gitignored) from pyproject.toml + uv.lock
+```
+
+Run scripts with `uv run <script>` or `.venv/bin/python <script>`. The
+validator requires `pyyaml`: it strict-parses concept frontmatter the way
+GitHub does, so YAML that GitHub rejects (e.g. an unquoted `: ` inside a
+`description` — quote such values) fails validation.
+
 ## Before you commit — always
 
 ```bash
-python3 tools/validate_okf.py
+uv run tools/validate_okf.py
 ```
 
-It must print `0 violation(s)`. It checks frontmatter/`type`, that every
+It must print `0 violation(s)`. It checks that frontmatter parses as YAML
+(strictly, as GitHub does) and carries `type`, that every
 root-relative `.md` link resolves, that concepts carry a `# Sources` section,
 and the cross-references in `README.md`, `CLAUDE.md`, and the router skill. CI
 runs the same command on every push and pull request.

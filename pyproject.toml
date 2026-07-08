@@ -1,0 +1,12 @@
+[project]
+name = "okf-bundles"
+version = "0.1.0"
+description = "Open Knowledge Format (OKF) bundles, router skill, and validator tooling"
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[tool.uv]
+# Docs repo with helper scripts, not an installable package.
+package = false
