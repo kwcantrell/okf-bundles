@@ -15,3 +15,5 @@ loop:
 Every concept is grounded in the autoresearch repository's own files (`README.md`,
 `program.md`, `train.py`). Subsequent tasks append lines here as further areas
 are added.
+
+2026-07-07 — added running-with-claude-code area
