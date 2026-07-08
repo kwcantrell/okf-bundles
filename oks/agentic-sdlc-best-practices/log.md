@@ -6,3 +6,4 @@
 2026-07-07 — added design-and-architecture area
 2026-07-07 — added implementation area
 2026-07-07 — added verification-and-review area
+2026-07-07 — added operations-and-evolution area
