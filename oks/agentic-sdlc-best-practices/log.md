@@ -7,3 +7,4 @@
 2026-07-07 — added implementation area
 2026-07-07 — added verification-and-review area
 2026-07-07 — added operations-and-evolution area
+2026-07-07 — added agent-harness area
