@@ -4,3 +4,4 @@
 2026-07-07 — added context-engineering area
 2026-07-07 — added requirements-and-planning area
 2026-07-07 — added design-and-architecture area
+2026-07-07 — added implementation area
