@@ -67,6 +67,7 @@ spec and the agent-edited script is covered in
 - [spec/script split](/oks/autoresearch-best-practices/loop/spec-script-split.md)
 - [single-file discipline](/oks/autoresearch-best-practices/loop/single-file-discipline.md)
 - [keep or revert with git](/oks/autoresearch-best-practices/loop/keep-or-revert-with-git.md)
+- [claude code as the agent](/oks/autoresearch-best-practices/running-with-claude-code/claude-code-as-the-agent.md)
 
 # Sources
 

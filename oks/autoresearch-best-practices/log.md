@@ -19,3 +19,5 @@ are added.
 2026-07-07 — added running-with-claude-code area
 
 2026-07-07 — added agentic-engineering area
+
+2026-07-07 — added root index and registered bundle in router and README

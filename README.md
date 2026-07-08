@@ -19,6 +19,9 @@ agents without any special tooling.
 - [`oks/claude-best-practices/`](oks/claude-best-practices/index.md) — how to
   use Claude Code effectively, from managing context and planning to
   verification, subagents, automation, and permissions/safety.
+- [`oks/autoresearch-best-practices/`](oks/autoresearch-best-practices/index.md) — Karpathy's
+  autoresearch autonomous ML-research loop, running it with Claude Code, and
+  the agentic-engineering discipline around it.
 
 ## Router skill
 
