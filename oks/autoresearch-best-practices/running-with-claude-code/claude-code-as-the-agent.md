@@ -36,7 +36,7 @@ experiment, and reads the log back.
 
 The loop's payoff is unattended runtime. `program.md` tells the agent it is
 autonomous — "The human might be asleep... expects you to continue working
-*indefinitely* until you are manually stopped" — and the README frames the win in
+*indefinitely* until you are manually stopped" — and it frames the win in
 terms of sleep: at roughly five minutes per experiment the agent runs about 12 per
 hour, "for a total of about 100 over the duration of the average human sleep."
 That only works if the agent runs without a person answering prompts.
