@@ -119,7 +119,14 @@ review; the cuts are recorded in the inventory below):
 
 Root: `oks/agentic-sdlc-best-practices/` with `index.md`
 (progressive-disclosure entry) and `log.md` (dated change log). **Nine
-areas**, each a subdirectory with its own `index.md`. **38 concept files.**
+areas**, each a subdirectory with its own `index.md`. **38 concept files
+listed below, with a target of ≥40** (user decision at the spec gate): the
+research fan-out must surface at least two additional genuinely distinct,
+primary-sourced concepts — candidates include `workflows-vs-agents.md`
+(Anthropic, "Building effective agents": when a predefined workflow beats an
+autonomous agent) and `anatomy-of-a-coding-agent.md` (the paper's agent
+refresher + "what's in the harness") — without padding; if fewer than two
+survive the distinctness bar, report back at plan review rather than pad.
 
 The inventory below is the product of the adversarial panel's dedup pass
 (11 areas / 44 concepts → 9 areas / 38 concepts: ~10 pure-duplication
@@ -429,11 +436,10 @@ simple tasks, Opus/Fable for complex):
 
 ## Commit plan
 
-**Pre-flight (panel: failure):** the working tree currently carries an
-uncommitted user edit to `CLAUDE.md` (the "How we work" section). Before
-commit #1, that edit is committed separately (its own `docs:` commit, with
-user's go-ahead) or stashed — the allowlist commit must contain only the
-allowlist hunk.
+**Pre-flight (panel: failure) — DONE:** the previously uncommitted user edit
+to `CLAUDE.md` (the "How we work" section) was committed as its own `docs:`
+commit with the user's approval; the working tree is clean, so commit #1
+will contain only the allowlist hunk.
 
 Atomic, Conventional Commits:
 
@@ -447,13 +453,18 @@ Atomic, Conventional Commits:
 
 Adversarial panel (requirements / assumptions / failure & abuse /
 scope-YAGNI) ran 2026-07-07; all four reviewers' findings are incorporated
-above. Two items are explicitly deferred to the user's spec-review gate:
+above. Two items were deferred to the user's spec-review gate and are now
+**resolved**:
 
-1. **Source-type interpretation** (papers/white papers → authoritative
-   primary provider material) — needs ratification.
-2. **Scale delta** — dedup cuts land the inventory at 9 areas / 38 concepts
-   vs. the originally approved "8+ areas / 40+ concepts." Areas satisfy the
-   choice; the concept count is slightly under because ~10 planned concepts
-   were pure duplication of existing bundles, partially offset by 7
-   paper-grounded concepts the first draft missed. Padding back to 40 would
-   violate the repo's cross-link-don't-restate rule.
+1. **Source-type interpretation** — RATIFIED by the user: authoritative
+   primary provider material (papers, white papers, official engineering
+   blogs/docs, canonical repos) counts; forums and secondary journalism
+   remain banned.
+2. **Scale delta** — user chose: hold the ≥40-concept target by finding at
+   least two more genuinely distinct concepts during research (see Bundle
+   structure); no padding — if the sources don't support them, report back
+   at plan review.
+
+Also resolved: the pre-existing uncommitted `CLAUDE.md` "How we work"
+section was committed separately (`docs:` commit) before any bundle work, so
+the allowlist commit stays atomic.
