@@ -30,9 +30,10 @@ fixed and the test merely being changed to pass.
 For new work, the equivalent is supplying verification criteria up front —
 naming the test cases a function must satisfy — for example: "write a
 validateEmail function. example test cases: user@example.com is true,
-invalid is false, user@.com is false. run the tests after implementing."
-Either way, the test exists and is expected to fail before the corresponding
-implementation is written.
+invalid is false, user@.com is false. run the tests after implementing." In
+the bug-fix case the failing test is written and confirmed to fail before
+the fix; in the new-work case the criteria are named up front but the tests
+are run only after the implementation exists, to confirm it.
 
 ## Run, read, iterate
 
