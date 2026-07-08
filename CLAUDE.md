@@ -30,8 +30,13 @@ Follow these rules, then validate. Deeper rationale lives in the bundle itself:
    `# Sources` section citing **primary sources only**: official docs or
    major-provider engineering material. Allowed hosts: `git-scm.com`,
    `docs.github.com`, `atlassian.com`, `conventionalcommits.org`, `agents.md`,
-   `docs.claude.com`, `code.claude.com`, `anthropic.com`, `cloud.google.com`, `github.com`, `arxiv.org`, `x.com`.
-   These three are for the AutoResearch bundle's primary sources (Karpathy's GitHub repo, arXiv papers, and Karpathy's X posts).
+   `docs.claude.com`, `code.claude.com`, `anthropic.com`, `cloud.google.com`, `github.com`, `arxiv.org`, `x.com`,
+   `kaggle.com`, `cdn.openai.com`, `langchain.com`, `docs.langchain.com`.
+   `github.com`, `arxiv.org`, `x.com` serve the AutoResearch bundle's primary
+   sources (Karpathy's repo, arXiv papers, Karpathy's X posts); `kaggle.com`
+   (Google-published whitepapers), `cdn.openai.com` (OpenAI guides), and
+   `langchain.com`/`docs.langchain.com` serve the agentic-SDLC bundle's
+   provider primary sources.
    No forums, Reddit, or unattributed blogs. Do not state a non-obvious claim
    you cannot cite to one of these.
 
