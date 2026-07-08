@@ -28,7 +28,7 @@ the repo root.
 | git, GitHub, commits, branches, merges, rebases, pull requests, tags, hooks, history, repo security | `/oks/git-best-practices/index.md` |
 | laying out a repo so AI agents find skills, context files (AGENTS.md, CLAUDE.md), MCP tooling, knowledge bundles | `/oks/ai-agent-repo-structure/index.md` |
 | using Claude Code effectively — workflows, context management, planning, subagents and model choice, verification, automation, permissions/safety | `/oks/claude-best-practices/index.md` |
-| Karpathy AutoResearch, autonomous ML-research loops, running research agents with Claude Code, vibe coding / agentic engineering | `/oks/autoresearch-best-practices/index.md` |
+| Karpathy AutoResearch, autonomous ML-research loops, running research agents with Claude Code, agentic engineering / vibe coding | `/oks/autoresearch-best-practices/index.md` |
 
 ## Verifying claims
 

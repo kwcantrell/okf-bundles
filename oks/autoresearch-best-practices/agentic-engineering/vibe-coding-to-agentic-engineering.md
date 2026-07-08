@@ -20,8 +20,8 @@ them. The vocabulary for that shift is itself Karpathy's, and it has moved twice
 ## Karpathy coined "vibe coding"
 
 In a February 2025 post, Karpathy named a new mode of working with code that he
-called "vibe coding" — leaning fully into the model's output, "embracing
-exponentials," and largely forgetting that the code itself exists, on the premise
+called "vibe coding" — leaning fully into the model's output, embracing
+exponentials, and largely forgetting that the code itself exists, on the premise
 that LLM coding tools had gotten good enough to make that viable. The term is his
 coinage, and it spread far beyond the original post to become the general label
 for loosely-supervised, prompt-driven building.

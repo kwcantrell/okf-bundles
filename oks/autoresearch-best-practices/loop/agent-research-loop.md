@@ -21,7 +21,7 @@ single training script.
 
 ## The cycle
 
-`program.md` spells out the loop the agent runs, step by step:
+The loop, as `program.md` describes it, runs roughly as follows:
 
 1. **Look at the git state** to see where the current best result stands.
 2. **Tune `train.py` with an experimental idea** by directly hacking the code —
@@ -46,7 +46,7 @@ The loop is designed to run without a human in the seat. `program.md` includes a
 `NEVER STOP` rule: once the experiment loop has begun, the agent must not pause to
 ask the human whether to continue — "The human might be asleep, or gone from a
 computer and expects you to continue working *indefinitely* until you are
-manually stopped. You are autonomous." The README frames the payoff in terms of
+manually stopped. You are autonomous." `program.md` frames the payoff in terms of
 sleep: at roughly 5 minutes per experiment the agent can run about 12 per hour,
 "for a total of about 100 over the duration of the average human sleep." The user
 wakes to a batch of completed results.
